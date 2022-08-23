@@ -6,10 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath="ghene/microproject_new:v1.0"
 
 # Step 2:  
 # Authenticate & tag
+docker login
+docker tag microproject_new $dockerpath
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
