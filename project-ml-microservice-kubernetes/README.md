@@ -42,7 +42,7 @@ source .devops/bin/activate
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-### Kubernetes Steps
+### Brief Explanation of project files
 
 * **Kubernetes_output.txt** - textfile containing the logs of application running kubernetes cluster
 * **docker_output.txt** - textfile containing application logs while running on a single docker instance
