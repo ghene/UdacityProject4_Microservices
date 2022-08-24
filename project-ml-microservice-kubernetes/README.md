@@ -44,7 +44,13 @@ source .devops/bin/activate
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+* Kubernetes_output.txt - textfile containing the logs of application running kubernetes cluster
+* docker_output.txt - textfile containing application logs while running on a single docker instance
+* Dockerfile - instruction set for build docker container
+* Makefile - this file defines instructions on how the application is to be built
+* requirements.txt - List of software required to run the application
+* app.py - Flash Application that needs to be containerized 
+* make_prediction.sh - script to query flask app for data
+* run_kubernetes.sh - script to launch application on kubernetes
+* run_docker.sh - script to build and deploy application on docker container
+* upload_docker - script to upload docker image to dockerhub
